@@ -34,6 +34,23 @@ main()
 
 	fd=open("/home/temp", O_RDONLY);
 	size=read(fd,buffer,sizeof(buffer)); //将fd指向的temp文件中的内容读出，存放到数组buffer中
+	//当读到EOF信号时，说明已读完字节
+	//理解read时可能遇到不足值的问题？？？
 	close(fd);
 	printf("%s", buffer);
 }
+
+
+
+/*
+因为在写普通文件时，写操作从文件的当前指针位置开始。
+下面是lseek函数较特别的使用（和write，read等函数同级）
+☆ 欲将读写位置移到文件开头时：lseek(int fd,0,SEEK_SET)
+☆ 欲将读写位置移到文件尾时：lseek(int fd,0,SEEK_END)
+☆ 想要取得目前文件位置时：lseek(ind fd,0,SEEK_CUR)
+*/
+
+//可以简单的记住：ssize_t是有符号整形，size_t是无符号整形。
+
+
+

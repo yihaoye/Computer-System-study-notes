@@ -1,6 +1,6 @@
 /* I/O of system, 如何打开文件读写从而读写I/O */
 /* 与windows不同，Linux操作系统都是基于文件概念的（这个很很重要啊），文件是以字符序列构成的信息载体。
-根据这一点，可以把I/O设备（网络、磁盘、终端等）当做文件来处理。因此，与磁盘上的普通文件进行交互所用的同一系统调用可以直接用于I/O设备。
+根据这一点，可以把I/O设备（网络、网络套接字socket、磁盘、终端如键盘显示器等）当做文件来处理。因此，与磁盘上的普通文件进行交互所用的同一系统调用可以直接用于I/O设备。
 这样大大简化了系统对不同设备的处理，提高了效率。 */
 //http://webcache.googleusercontent.com/search?q=cache:XJftPv58quMJ:blog.csdn.net/mybelief321/article/details/8989755+&cd=2&hl=en&ct=clnk&gl=nz
 
