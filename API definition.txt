@@ -1,0 +1,18 @@
+
+source: Quora
+Author: Ravish Rawat
+
+Question: What is the difference between an API and a class library?
+
+Answer:
+		When we speak of an API, it means only the parts that are exposed to the programmer. If I speak of a 'library' then I also mean everything that is working "under the hood", though part of the library nevertheless.
+
+		I think that Library is a set of all classes and functions that can be used from our code to do our task easily. But the library can contain some of its private functions for its usage which it does not want to expose.
+
+		API is a part of library which is exposed to the user. So whatever documentation we have regarding a library, we call it an API Documentation because it contains only those classes and functions to which we have access.
+
+		To put it in concise manner
+
+		Library: Collection of all classes and methods stored for re-usability
+
+		API: Part of library classes and methods which can be used by a user in his/her code.
